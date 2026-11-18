@@ -1,0 +1,60 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Go build, tests, coverage and profiling
+/bin/
+dist/
+*.exe
+*.exe~
+*.test
+*.coverprofile
+coverage.out
+coverage.html
+*.pprof
+/go.work
+/go.work.sum
+
+# Vue / Vite dependencies, caches and test output
+node_modules/
+.vite/
+.vite-temp/
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+
+# Local runtime data, logs and database backups
+logs/
+*.log
+/tmp/
+/backups/
+*.sql.gz
+*.sql.bak
+
+# Local editor and agent state
+.idea/
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/tasks.json
+/.workbuddy/
+/.cursor/*
+!/.cursor/rules/
+/.codex/*
+!/.codex/config.toml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Downloaded research artifacts
+/short_videos-main/
+/short_videos-main.zip
+/sv-bugpk.html
+/sv-bugpk-app.js
+
+# 自定义目录
+design-preview/
+docs/
