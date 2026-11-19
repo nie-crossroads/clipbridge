@@ -1,0 +1,100 @@
+/* Shared spacing for Element Plus forms and overlays in the admin console. */
+.admin-form .el-form-item.el-form-item--label-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--cb-space-3);
+  margin: 0;
+}
+
+.admin-form .el-form-item--label-top > .el-form-item__label {
+  margin: 0;
+  line-height: var(--cb-lh-body);
+  font-weight: var(--cb-fw-medium);
+}
+
+.admin-form .el-form-item--label-top > .el-form-item__content {
+  gap: var(--cb-space-3);
+  min-width: 0;
+  line-height: var(--cb-lh-body);
+}
+
+.admin-form-stack {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--cb-space-5);
+}
+
+.admin-field-hint {
+  width: 100%;
+}
+
+.admin-form .admin-choices,
+.admin-control-row,
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--cb-space-3);
+}
+
+.admin-form .admin-choices > :is(.el-radio, .el-checkbox) {
+  margin: 0;
+}
+
+.admin-actions > .el-button + .el-button {
+  margin-left: 0;
+}
+
+.admin-actions-end {
+  justify-content: flex-end;
+}
+
+.el-dialog.admin-dialog {
+  --el-dialog-padding-primary: var(--cb-space-6);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - 2 * var(--cb-space-4));
+}
+
+.admin-dialog .el-dialog__header,
+.admin-dialog .el-dialog__footer {
+  flex: none;
+}
+
+.admin-dialog .el-dialog__body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.admin-dialog .el-dialog__footer {
+  padding-top: var(--cb-space-5);
+}
+
+.el-drawer.admin-drawer {
+  --el-drawer-padding-primary: var(--cb-space-6);
+}
+
+.admin-drawer .el-drawer__header {
+  margin-bottom: var(--cb-space-3);
+}
+
+.admin-descriptions.el-descriptions .el-descriptions__table.is-bordered .el-descriptions__cell {
+  padding: var(--cb-space-3) var(--cb-space-4);
+}
+
+.admin-descriptions.el-descriptions .el-descriptions__table.is-bordered .el-descriptions__content {
+  overflow-wrap: anywhere;
+}
+
+.el-message-box.admin-confirm {
+  --el-messagebox-padding-primary: var(--cb-space-6);
+}
+
+.admin-confirm .el-message-box__btns {
+  gap: var(--cb-space-3);
+  padding-top: var(--cb-space-4);
+}
+
+.admin-confirm .el-message-box__btns > .el-button + .el-button {
+  margin-left: 0;
+}
